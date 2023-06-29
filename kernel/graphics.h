@@ -6,6 +6,16 @@
 
 #include "math.h"
 
+uint32_t make_color(uint8_t r, uint8_t g, uint8_t b) {
+    uint32_t color = 0;
+    color |= ((uint32_t)r) << 16; // Shift red value to the leftmost 8 bits
+    color |= ((uint32_t)g) << 8;  // Shift green value to the middle 8 bits
+    color |= (uint32_t)b;         // Assign blue value to the rightmost 8 bits
+
+    return color;
+}
+
+
 void draw_pixel(struct limine_framebuffer *framebuffer, uint16_t x, uint16_t y, uint32_t color) {
     uint32_t* fb_ptr = framebuffer->address;
     fb_ptr[x + (y * framebuffer->width)] = color;
