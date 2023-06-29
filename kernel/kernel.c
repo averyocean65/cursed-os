@@ -39,8 +39,6 @@ void _start(void) {
     draw_string_8x16(framebuffer, "I am the bbg in question\n-Loafie", 0xA74B1D, 486, 70+64);
     draw_string_8x16(framebuffer, "Do you want a banana? Peel it down and go mmmmmmm\n-banana song, a cult classic", 0xE4CC22, 400, 200);
     draw_string_8x16(framebuffer, "KILL YOURSELF\n-Avery/Winter", 0xCE3351, 172, 200);
-
-    clear_screen(framebuffer, 0x0);
     
     // We're done, just hang...
     hcf();
