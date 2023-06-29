@@ -7,5 +7,5 @@ Enjoy lol</p>
 <img src="media/os.png">
 
 <h2>How to build</h2>
-<p>Run "make" and if anything fails, then make an issue or figure out the bug yourself.</p>
+<p>Run <code>make</code> and if anything fails, then make an issue or figure out the bug yourself.</p>
 </div>
